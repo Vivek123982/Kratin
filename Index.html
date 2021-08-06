@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
+    <style>.container{display:flex;
+        justify-content:center;
+        align-item:center;
+        border:1px solid black;}
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <form name="regForm" onsubmit="return validate()" >
         <label for="Age">Enter Your Age:</label><br><br>
         <input type="number" name="Age" id="Age" placeholder="enter age above 65"><br><br>
         <input type="submit" value="Submit">    
     </form>
+    </div>
     <script>
         function validate() {
             let age = document.forms['regForm']['Age'];
